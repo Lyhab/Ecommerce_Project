@@ -16,6 +16,13 @@ const router = createRouter({
         component: () =>
         import("../views/AboutPage.vue")
       },
+      {
+        path: "/Promotion",
+        name: "Promotion",
+        component: () =>
+        import("../views/Promotion.vue")
+      },
+
   ]
 })
 

@@ -69,8 +69,8 @@
     export default{
         name: "AboutPage",
         components:{
-    TabHeader
-}
+        TabHeader
+        }
     }
 </script>
 

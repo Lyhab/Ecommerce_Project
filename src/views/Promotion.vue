@@ -34,9 +34,22 @@
         :title="showproduct.title"
          />
       </div>
+    <div class="product">
+        <Product v-for="product in store.products" 
+        :id="product.id"
+        :image="product.image" 
+        :name="product.name" 
+        :title="product.title"
+        :discound="product.discound"
+        :dsprice="product.dsprice"
+        :price="product.price"
+        :buy="product.buy"
+         />
+      </div>
 </div>
 </template>
 <script>
+import Product from '../components/Product.vue';
 import Showproduct from '../components/Showproduct.vue';
 import TabHeader from '../components/TabHeader.vue';
 import { useStore } from '../stores/store';
@@ -44,7 +57,8 @@ export default{
     name: "Promotion",
     components:{
     TabHeader,
-    Showproduct
+    Showproduct,
+    Product
 },
 setup() {
         const store = useStore();

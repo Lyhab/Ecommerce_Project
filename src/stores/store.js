@@ -10,6 +10,15 @@ export const useStore = defineStore("store", {
       { id: 5, tab_letter: "About"},
     ],
     activeTab: null,
+    showproducts: [
+      {
+          // bg: "#3BB77E",
+          id:1,
+          title:"Headphone for sale! Up to 50% Off",       
+          image: new URL("../assets/images/pink.png", import.meta.url),
+      },
+
+  ],
   }),
 
   actions: {

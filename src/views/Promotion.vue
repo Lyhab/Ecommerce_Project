@@ -23,19 +23,53 @@
     </div>
 </div>
 
+    <div class="search">
+        
+        <input type="search" placeholder="Search.." name="gsearch" class="Size-Button">
+    </div>
+    <div class="showproduct">
+        <Showproduct v-for="showproduct in store.showproducts" 
+        :id="showproduct.id"
+        :image="showproduct.image" 
+        :title="showproduct.title"
+         />
+      </div>
 </div>
 </template>
 <script>
+import Showproduct from '../components/Showproduct.vue';
 import TabHeader from '../components/TabHeader.vue';
-
+import { useStore } from '../stores/store';
 export default{
     name: "Promotion",
     components:{
-    TabHeader
-    }
+    TabHeader,
+    Showproduct
+},
+setup() {
+        const store = useStore();
+
+        // Set the initial active tab to "Home"
+        store.setActiveTab(1);
+
+        return {
+            store,
+        };
+    },
 }
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
+.Size-Button{
+    width: 530px;
+    height: 30px;
+    border-radius: 5px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
 .name_container{
     display: flex;
     font-family: Sixtyfour;
@@ -45,11 +79,11 @@ export default{
     font-size: 30px;
 }
 .firstname{
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .lastname{
-    font-size: 36px;
+    font-size: 26px;
     display: flex;
     flex-direction: column;
     margin-top: 1px;

@@ -45,7 +45,9 @@
         gap: 10px;
 
     }
-
+    .price{
+        text-decoration-line: line-through;
+    }
     .buy{
         width: 70px;
         height: 30px;
@@ -60,12 +62,14 @@
         font-family: Georgia;
         font-size: 30px;
         margin-top: -1px;
+        
     }
     .Discound{
         display: flex;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        
         width: 200px;
         height: 50px;
         
@@ -110,12 +114,7 @@
         justify-content: center;
         width: 300px;
         height: 250px;
-        
-        color: black;
-        
-        
-        
-        
+        color: black;       
     }
     .image1{
         width: 200px;

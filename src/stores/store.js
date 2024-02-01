@@ -22,7 +22,7 @@ export const useStore = defineStore("store", {
       {
           
           id:1,      
-          image: new URL("../assets/images/pink.png", import.meta.url),
+          image: new URL("../assets/images/2.png", import.meta.url),
           name:"Bold Sound, Unplugged",
           title: "The on-ear design is revamped to provide a comfortably tight fit that keeps in rich audio and seals out distracting noises.",
           discound: "50%",
@@ -33,7 +33,7 @@ export const useStore = defineStore("store", {
       {
           
           id:2,      
-          image: new URL("../assets/images/pink.png", import.meta.url),
+          image: new URL("../assets/images/3.png", import.meta.url),
           name:"Bold Sound, Unplugged",
           title: "The on-ear design is revamped to provide a comfortably tight fit that keeps in rich audio and seals out distracting noises.",
           discound: "50%",
@@ -44,7 +44,7 @@ export const useStore = defineStore("store", {
       {
           
           id:3,      
-          image: new URL("../assets/images/pink.png", import.meta.url),
+          image: new URL("../assets/images/4.png", import.meta.url),
           name:"Bold Sound, Unplugged",
           title: "The on-ear design is revamped to provide a comfortably tight fit that keeps in rich audio and seals out distracting noises.",
           discound: "50%",
@@ -52,7 +52,32 @@ export const useStore = defineStore("store", {
           dsprice: "499$",
           buy:"Buy"
       },
+
   ],
+  categorys: [
+    {
+        
+        id:1,      
+        image: new URL("../assets/images/2.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
+    {
+        
+        id:2,      
+        image: new URL("../assets/images/2.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
+
+
+],
   }),
 
   actions: {

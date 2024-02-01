@@ -46,9 +46,23 @@
         :buy="product.buy"
          />
       </div>
+      <div class="Limited">Limited Promotion</div>
+      <div class="Category">
+        <Category v-for="category in store.categorys" 
+        :id="category.id"
+        :image="category.image" 
+        :name="category.name" 
+        :discound="category.discound"
+        :dsprice="category.dsprice"
+        :price="category.price"
+        :add="category.add"
+        :buy="category.buy"
+         />
+      </div>
 </div>
 </template>
 <script>
+import Category from '../components/Category.vue';
 import Product from '../components/Product.vue';
 import Showproduct from '../components/Showproduct.vue';
 import TabHeader from '../components/TabHeader.vue';
@@ -58,7 +72,8 @@ export default{
     components:{
     TabHeader,
     Showproduct,
-    Product
+    Product,
+    Category
 },
 setup() {
         const store = useStore();
@@ -75,7 +90,13 @@ setup() {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
-
+.Limited{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-style: oblique;
+    margin-top: 10px;
+}
 .Size-Button{
     width: 530px;
     height: 30px;

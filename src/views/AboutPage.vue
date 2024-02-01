@@ -3,17 +3,18 @@
     <div class="Container-about">
             
     <div class="header_container">
-        <div class="tabheader">
-            <TabHeader></TabHeader>
-        </div>
         <div class="name_container">
             <div class="firstname">SO</div>
             <div class="lastname">
                 <div>Hab</div>
                 <div>und</div>
+            </div>
+        </div>
+        <div class="tabheader">
+            <TabHeader></TabHeader>
         </div>
 
-    </div>
+        
         <div class="login_container">
             <div class="login">Login</div>
             <div class="user_logo">
@@ -75,11 +76,11 @@
 </script>
 
 <style scoped>
-    .firstname{
-    font-size: 80px;
-}
+.firstname{
+    font-size: 60px;
+    }
 .lastname{
-    font-size: 36px;
+    font-size: 26px;
     display: flex;
     flex-direction: column;
     margin-top: 1px;

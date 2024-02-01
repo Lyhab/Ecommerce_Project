@@ -1,6 +1,7 @@
 <template>
+    
     <div class="product" :style="{ backgroundColor: bgColor }">
-
+        <div class="container-wrap">
         <img :src="image" class="image1"/>
 
         <div class="Container-product">
@@ -18,7 +19,7 @@
         <p class="buy">{{ buy }}</p>
         </div>
         </div>
-
+        </div>
     </div>
 </template>
 <script>
@@ -31,10 +32,20 @@
     }
 </script>
 <style>
-    /* .Box-buy{
+    .container-wrap{
+        height: 250px;
+        width: 480px;
+        margin-top: 10px;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
-    } */
+        background-color: rgb(241, 230, 230);
+        border-radius: 10px;
+        gap: 10px;
+
+    }
+
     .buy{
         width: 70px;
         height: 30px;
@@ -57,7 +68,7 @@
         flex-wrap: wrap;
         width: 200px;
         height: 50px;
-        /* background-color: aqua; */
+        
         gap: 10px;
         margin-top: -40px;
     }
@@ -74,11 +85,11 @@
         margin-top: -10px;
         font-size: 30px;
         
-        /* position: absolute; */
+        
     }
     .name{
         display: flex;
-        /* align-items: center; */
+        
         justify-content: center;
         font-size: 20px;
         font-family: "Times New Roman", Times, serif;
@@ -99,7 +110,7 @@
         justify-content: center;
         width: 300px;
         height: 250px;
-        /* background-color: blueviolet; */
+        
         color: black;
         
         
@@ -109,17 +120,14 @@
     .image1{
         width: 200px;
         height: 200px;
-        /* background-color: black; */
+        
     }
     .product{
-        height: 250px;
-        width: 450px;
-        margin-top: 10px;
+        
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(241, 230, 230);
-        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        gap: 10px;
+
     }
 </style>

@@ -75,6 +75,7 @@ setup() {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
+
 .Size-Button{
     width: 530px;
     height: 30px;

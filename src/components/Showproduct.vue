@@ -35,11 +35,11 @@
         justify-content: space-between;
         background-color: rgb(241, 230, 230);
         border-radius: 10px;
-        height: 350px;
+        height: 280px;
         margin-top: 20px;
     }
     .image{
-        width: 340px;
-        height: 340px;
+        width: 270px;
+        height: 270px;
     }
 </style>

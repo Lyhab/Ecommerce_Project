@@ -25,8 +25,13 @@
 
     <div class="search">
         
+        <div class="Back">
+            <div>Back</div>
+        </div>
         <input type="search" placeholder="Search.." name="gsearch" class="Size-Button">
+        <div></div>
     </div>
+
     <div class="showproduct">
         <Showproduct v-for="showproduct in store.showproducts" 
         :id="showproduct.id"
@@ -90,6 +95,22 @@ setup() {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
+.Category{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.Back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    color: black;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    /* justify-content: center; */
+}
 .Limited{
     display: flex;
     justify-content: center;
@@ -98,13 +119,15 @@ setup() {
     margin-top: 10px;
 }
 .Size-Button{
-    width: 530px;
+    width: 585px;
     height: 30px;
     border-radius: 5px;
 }
 .search{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    flex-direction: row;
 }
 .name_container{
     display: flex;

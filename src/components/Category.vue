@@ -1,24 +1,25 @@
 <template>
     <div class="category" :style="{ backgroundColor: bgColor }">
-        <div class="container-wrap-category">
-        <img :src="image" class="image1"/>
 
-        <div class="Container-product">
-        <p class="name1">{{ name }}</p>
-        <p class="discound">{{ discound }}</p>
+            <div class="container-wrap-category">
+            <img :src="image" class="image2"/>
 
-        <div class="Discound1">
-        <p class="dsprice1">{{ dsprice }}</p>
-        <p class="price1">{{ price }}</p>
+            <div class="Container-product1">
+                <p class="name1">{{ name }}</p>
+                <p class="discound">{{ discound }}</p>
+
+                <div class="Discound1">
+                    <p class="dsprice1">{{ dsprice }}</p>
+                    <p class="price1">{{ price }}</p>
         
-        </div>
-        <div class="Box-buy1">
-            
-        <p class="add">{{ add }}</p>
-        <p class="buy">{{ buy }}</p>
-        </div>
-        </div>
-        </div>
+                </div>
+                    <div class="Box-buy1">
+                        <p class="add">{{ add }}</p>
+                        <p class="buy1">{{ buy }}</p>
+                    </div>
+                </div>
+            </div>
+
     </div>   
 </template>
 <script>
@@ -30,42 +31,49 @@
     }
 </script>
 <style>
+    .image2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 180px;
+    }
     .add{
-        width: 70px;
-        height: 30px;
+        width: 60px;
+        height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #006CEA;
         border-radius: 10px;
-        margin-left: 5px;
+        margin-left: 2px;
         
     }
     .Box-buy1{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 230px;
+        width: 220px;
         margin-top: -30px;
     }
     .price1{
         text-decoration-line: line-through;
     }
-    .buy{
-        width: 70px;
-        height: 30px;
+    .buy1{
+        width: 60px;
+        height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #006CEA;
         border-radius: 10px;
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .name1{
         display: flex;
         justify-content: left;
         margin-left: 5px;
-        font-size: 20px;
+        font-size: 15px;
         font-family: Georgia;
         
     }
@@ -87,18 +95,24 @@
     .container-wrap-category{
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 340px;
+    width: 230px;
+    height: 310px;
     background-color: aliceblue;
     border-radius: 10px;
 
     }
-    .category{
-        
+    .Container-product1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 300px;
+        height: 250px;
+        color: black;       
+    }
+    .category{
+        margin-top: 20px;
         background-color: rgb(0, 0, 0);
-        gap: 10px;
 
     }
 </style>

@@ -40,7 +40,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: rgb(241, 230, 230);
+        background-color: white;
         border-radius: 10px;
         gap: 10px;
 
@@ -104,6 +104,7 @@
         height: 55px;
         font-size: 12px;
         margin-top: -10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     }
 

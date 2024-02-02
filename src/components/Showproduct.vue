@@ -33,7 +33,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: rgb(241, 230, 230);
+        background-color: rgb(255, 255, 255);
         border-radius: 10px;
         height: 280px;
         margin-top: 20px;

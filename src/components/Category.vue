@@ -1,8 +1,10 @@
 <template>
     <div class="category" :style="{ backgroundColor: bgColor }">
-
+        <!-- 1 -->
             <div class="container-wrap-category">
-            <img :src="image" class="image2"/>
+                <div class="wrap-image">
+                    <img :src="image" class="image2"/>
+                </div>
 
             <div class="Container-product1">
                 <p class="name1">{{ name }}</p>
@@ -19,7 +21,27 @@
                     </div>
                 </div>
             </div>
+            <!-- 2 -->
+            <div class="container-wrap-category">
+                <div class="wrap-image">
+                    <img :src="image" class="image2"/>
+                </div>
 
+            <div class="Container-product1">
+                <p class="name1">{{ name }}</p>
+                <p class="discound">{{ discound }}</p>
+
+                <div class="Discound1">
+                    <p class="dsprice1">{{ dsprice }}</p>
+                    <p class="price1">{{ price }}</p>
+        
+                </div>
+                    <div class="Box-buy1">
+                        <p class="add">{{ add }}</p>
+                        <p class="buy1">{{ buy }}</p>
+                    </div>
+                </div>
+            </div>
     </div>   
 </template>
 <script>
@@ -31,6 +53,11 @@
     }
 </script>
 <style>
+    .wrap-image{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
     .image2{
         display: flex;
         justify-content: center;
@@ -74,7 +101,8 @@
         justify-content: left;
         margin-left: 5px;
         font-size: 15px;
-        font-family: Georgia;
+        /* font-family: Georgia; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         
     }
     .dsprice1{
@@ -113,6 +141,9 @@
     .category{
         margin-top: 20px;
         background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
     }
 </style>

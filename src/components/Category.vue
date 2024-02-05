@@ -1,5 +1,5 @@
 <template>
-    <div class="category" :style="{ backgroundColor: bgColor }">
+    <div class="category1" :style="{ backgroundColor: bgColor }">
         <!-- 1 -->
             <div class="container-wrap-category">
                 <div class="wrap-image">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="container-wrap-category">
+            <!-- <div class="container-wrap-category">
                 <div class="wrap-image">
                     <img :src="image" class="image2"/>
                 </div>
@@ -41,7 +41,7 @@
                         <p class="buy1">{{ buy }}</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
     </div>   
 </template>
 <script>
@@ -121,11 +121,12 @@
  
     }
     .container-wrap-category{
+    
     display: flex;
     flex-direction: column;
     width: 230px;
     height: 310px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 
     }
@@ -138,12 +139,13 @@
         height: 250px;
         color: black;       
     }
-    .category{
+    /* .category1{
+        width: 100%;
         margin-top: 20px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 0, 0);
         display: flex;
-        flex-direction: column;
-        gap: 10px;
+        flex-wrap: wrap;
+       
 
-    }
+    } */
 </style>

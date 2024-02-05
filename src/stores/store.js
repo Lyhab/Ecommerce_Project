@@ -115,6 +115,66 @@ export const useStore = defineStore("store", {
         add: "3",
         buy:"Buy",
     },
+    {
+        
+        id:7,      
+        image: new URL("../assets/images/4.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
+    {
+        
+        id:8,      
+        image: new URL("../assets/images/6.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
+    {
+        
+        id:9,      
+        image: new URL("../assets/images/5.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
+    {
+        
+        id:10,      
+        image: new URL("../assets/images/6.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
+    {
+        
+        id:11,      
+        image: new URL("../assets/images/5.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
+    {
+        
+        id:12,      
+        image: new URL("../assets/images/5.png", import.meta.url),
+        name:"Bose QuietComfort Ultra",
+        price: "499$",
+        dsprice: "199$",
+        add: "3",
+        buy:"Buy",
+    },
 
 
 

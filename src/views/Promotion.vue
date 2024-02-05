@@ -96,9 +96,13 @@ setup() {
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
 .Category{
+    
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 16px;
+    gap: 15px;
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
 }
 .Back{
     display: flex;
@@ -169,4 +173,5 @@ setup() {
     color: white;
     padding: 30px;
 }
+
 </style>

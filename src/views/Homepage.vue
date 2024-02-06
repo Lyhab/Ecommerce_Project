@@ -39,9 +39,6 @@
             <i class="uil uil-telegram-alt"></i>
         </div>
     </div>
-
-    <Footer></Footer>
-
 </div>
 
 </template>
@@ -49,17 +46,15 @@
 <script>
 import { useStore } from '../stores/store';
 import TabHeader from '../components/TabHeader.vue'
-import Footer from '../components/FooterPage.vue'
 
 export default{
     components: {
         TabHeader,
-        Footer,
     },
     setup() {
         const store = useStore();
 
-        store.setActiveTab(1);
+        store.setActiveTab(5);
 
         return {
             store,

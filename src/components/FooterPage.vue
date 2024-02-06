@@ -56,14 +56,18 @@
 
 .footer_container{
     background-color: white;
-    opacity: 0.9;
     display: flex;
     flex-direction: column;
+    gap: 69px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
 }
 
 .top{
     display: flex;
-    gap: 100px;
+    gap: 168px;
+    justify-content: center;
 }
 
 .bot{
@@ -78,10 +82,17 @@ img{
     cursor: pointer;
 }
 
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 li{
     color: black;
     list-style-type: none;
     font-size: 20px;
+    cursor: default;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 

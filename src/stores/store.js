@@ -12,10 +12,18 @@ export const useStore = defineStore("store", {
     activeTab: null,
     showproducts: [
       {
-          // bg: "#3BB77E",
+          
           id:1,
           title:"Headphone for sale! Up to 50% Off",       
           image: new URL("../assets/images/pink.png", import.meta.url),
+      },
+  ],
+    showbrands: [
+      {
+          id:1,
+          title:"Sony",       
+          image: new URL("../assets/images/10.png", import.meta.url),
+          image1: new URL("../assets/images/5.png", import.meta.url),
       },
   ],
     products: [

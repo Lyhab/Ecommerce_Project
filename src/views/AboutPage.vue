@@ -126,7 +126,7 @@
         justify-content: center;
         width: 99%;
         height: 700px;
-        background-color: rgb(238, 227, 227);
+        background-color: rgb(255, 255, 255);
         margin-left: 5px;
         margin-top: 10px;
     }

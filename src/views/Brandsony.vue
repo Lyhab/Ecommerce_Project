@@ -1,6 +1,5 @@
 <template>
-    <div class="container">
-
+    <div class="brand-wrap">
         <div class="header_container">
             <div class="name_container">
                 <div class="firstname">SO</div>
@@ -11,73 +10,44 @@
                 </div>
 
             <div class="tabheader">
-                <TabHeader></TabHeader>              
+                <TabHeader></TabHeader>               
             </div>
 
-        <div class="login_container">
+            <div class="login_container">
                 <div class="login">Login</div>
                 <div class="user_logo">
             <i class="uil uil-user-circle"></i>
         </div>
     </div>
 </div>
-
-    <div class="search">
-        
+<div class="search">       
         <div class="Back">
             <div>Back</div>
-            </div>
-            <input type="search" placeholder="Search.." name="gsearch" class="Size-Button">
-            <div></div>
+        </div>
+        <input type="search" placeholder="Search.." name="gsearch" class="Size-Button">
+        <div></div>
     </div>
+    <div>
+        <Showbrand v-for="showbrand in store.showbrands" 
+        :id="showbrand.id"
+        :image="showbrand.image" 
+        :image1="showbrand.image1" 
+        :title="showbrand.title"/>
+    </div>
+    
 
-    <div class="showproduct">
-        <Showproduct v-for="showproduct in store.showproducts" 
-        :id="showproduct.id"
-        :image="showproduct.image" 
-        :title="showproduct.title"
-         />
-      </div>
-    <div class="product">
-        <Product v-for="product in store.products" 
-        :id="product.id"
-        :image="product.image" 
-        :name="product.name" 
-        :title="product.title"
-        :discound="product.discound"
-        :dsprice="product.dsprice"
-        :price="product.price"
-        :buy="product.buy"
-         />
-      </div>
-      <div class="Limited">Limited Promotion</div>
-      <div class="Category">
-        <Category v-for="category in store.categorys" 
-        :id="category.id"
-        :image="category.image" 
-        :name="category.name" 
-        :discound="category.discound"
-        :dsprice="category.dsprice"
-        :price="category.price"
-        :add="category.add"
-        :buy="category.buy"
-         />
-      </div>
 </div>
 </template>
 <script>
-import Category from '../components/Category.vue';
-import Product from '../components/Product.vue';
-import Showproduct from '../components/Showproduct.vue';
+
+import Showbrand from '../components/Showbrand.vue';
 import TabHeader from '../components/TabHeader.vue';
 import { useStore } from '../stores/store';
 export default{
-    name: "Promotion",
-    components:{
+    name: "Brandsony",
+    components: {
     TabHeader,
-    Showproduct,
-    Product,
-    Category
+    Showbrand
 },
 setup() {
         const store = useStore();
@@ -94,14 +64,10 @@ setup() {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
-.Category{
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 15px;
-    background-color: rgb(0, 0, 0);
+.Size-Button{
+    width: 585px;
+    height: 30px;
+    border-radius: 5px;
 }
 .Back{
     display: flex;
@@ -112,32 +78,24 @@ setup() {
     color: black;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-
-}
-.Limited{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    font-style: oblique;
-    margin-top: 10px;
-}
-.Size-Button{
-    width: 585px;
-    height: 30px;
-    border-radius: 5px;
+    /* justify-content: center; */
 }
 .search{
     display: flex;
     justify-content: space-between;
-
     flex-direction: row;
+}
+.brand-wrap{
+    background-color: black;
+    color: white;
+    padding: 15px;
 }
 .name_container{
     display: flex;
     font-family: Sixtyfour;
     cursor: none;
 }
-.user_logo{
+    .user_logo{
     font-size: 30px;
 }
 .firstname{
@@ -166,11 +124,6 @@ setup() {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: aliceblue;
 }
-.container{
-    background-color: black;
-    color: white;
-    padding: 15px;
-}
-
 </style>

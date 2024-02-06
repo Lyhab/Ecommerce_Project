@@ -22,6 +22,12 @@ const router = createRouter({
         component: () =>
         import("../views/Promotion.vue")
       },
+      {
+        path: "/Brandsony",
+        name: "Brandsony",
+        component: () =>
+        import("../views/Brandsony.vue")
+      },
 
   ]
 })

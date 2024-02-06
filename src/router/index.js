@@ -28,6 +28,12 @@ const router = createRouter({
         component: () =>
         import("../views/Brandsony.vue")
       },
+      {
+        path: "/Login",
+        name: "Login",
+        component: () =>
+        import("../views/Login.vue")
+      },
 
   ]
 })

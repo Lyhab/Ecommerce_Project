@@ -102,6 +102,7 @@ setup() {
     background-color: rgb(255, 255, 255);
     /* justify-content: center; */
 }
+
 .search{
     display: flex;
     justify-content: space-between;

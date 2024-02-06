@@ -186,7 +186,7 @@ export const useStore = defineStore("store", {
     },
     {
         
-        id:33,      
+        id:13,      
         image: new URL("../assets/images/sony3.png", import.meta.url),
         name:"Bold Sound, Unplugged",
         title: "The on-ear design is revamped to provide a comfortably tight fit that keeps in rich audio and seals out distracting noises.",

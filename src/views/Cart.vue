@@ -67,7 +67,7 @@
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px]" ></div>
                     <div class="translate-y-[40px]">Black</div>
-                    <div></div>
+                    <div  class="translate-y-[40px]">$</div>
                     <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value }}</div> 
@@ -75,9 +75,9 @@
                      </div>
                   </div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
-                    <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px]" ></div>
-                    <div class="translate-y-[40px]">Black</div>
-                    <div></div>
+                    <div><img src="../assets/images/White_Golden_Beat.webp" class=" cursor-pointer w-[80px]" ></div>
+                    <div class="translate-y-[40px]">White</div>
+                    <div  class="translate-y-[40px]">$</div>
                     <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase1" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value1 }}</div> 
@@ -85,9 +85,9 @@
                      </div>
                   </div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
-                    <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px]" ></div>
-                    <div class="translate-y-[40px]">Black</div>
-                    <div></div>
+                    <div><img src="../assets/images/8.png" class=" cursor-pointer w-[80px]" ></div>
+                    <div class="translate-y-[40px]">Blue</div>
+                    <div  class="translate-y-[40px]">$</div>
                     <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase2" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value2 }}</div> 
@@ -95,9 +95,9 @@
                      </div>
                   </div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
-                    <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px]" ></div>
-                    <div class="translate-y-[40px]">Black</div>
-                    <div></div>
+                    <div><img src="../assets/images/7.png" class=" cursor-pointer w-[80px]" ></div>
+                    <div class="translate-y-[40px]">Red</div>
+                    <div  class="translate-y-[40px]">$</div>
                     <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase3" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value3 }}</div> 

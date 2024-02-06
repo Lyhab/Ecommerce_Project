@@ -1,10 +1,8 @@
 <template>
-    
-    <div class="product" :style="{ backgroundColor: bgColor }">
-        <div class="container-wrap">
+    <div class="category1" :style="{ backgroundColor: bgColor }">
+        <div class="category1-wrap">
         <img :src="image" class="image1"/>
-
-        <div class="Container-product">
+        <div class="category1-product">
         <p class="name">{{ name }}</p>
         <div class="box-title">
         <p class="title1">{{ title }}</p>
@@ -23,27 +21,27 @@
     </div>
 </template>
 <script>
-    export default{
-        name: "Product",
-        props:["id", "image","name","title","discound","dsprice","price","buy"],
-        components: {
+export default{
+    name: "Category1",
+    props:["id", "image","name","title","discound","dsprice","price","buy"],
+    components:{
 
-        }
     }
+}
 </script>
 
+
 <style>
-    .container-wrap{
+    .category1-wrap{
         height: 250px;
         width: 489px;
-        margin-top: 10px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         background-color: white;
         border-radius: 10px;
-        /* gap: 10px; */
+        
 
     }
     .price{
@@ -109,7 +107,7 @@
 
     }
 
-    .Container-product{
+    .category1-product{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -123,7 +121,7 @@
         height: 200px;
         
     }
-    .product{
+    .category1{
         
         display: flex;
         flex-wrap: wrap;

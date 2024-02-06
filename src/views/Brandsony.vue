@@ -34,12 +34,24 @@
         :image1="showbrand.image1" 
         :title="showbrand.title"/>
     </div>
+    <div class="Categorys">
+        <Category1 v-for="category1 in store.category1s" 
+        :id="category1.id"
+        :image="category1.image" 
+        :name="category1.name" 
+        :title="category1.title"
+        :discound="category1.discound"
+        :dsprice="category1.dsprice"
+        :price="category1.price"
+        :buy="category1.buy"/>
+    </div>
     
 
 </div>
 </template>
 <script>
 
+import Category1 from '../components/Category1.vue';
 import Showbrand from '../components/Showbrand.vue';
 import TabHeader from '../components/TabHeader.vue';
 import { useStore } from '../stores/store';
@@ -47,7 +59,8 @@ export default{
     name: "Brandsony",
     components: {
     TabHeader,
-    Showbrand
+    Showbrand,
+    Category1
 },
 setup() {
         const store = useStore();
@@ -64,6 +77,15 @@ setup() {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
+.Categorys{
+    display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 10px;
+        background-color: rgb(0, 0, 0);
+        gap: 10px;
+        
+}
 .Size-Button{
     width: 585px;
     height: 30px;

@@ -21,27 +21,8 @@
                     </div>
                 </div>
             </div>
-            <!-- 2 -->
-            <!-- <div class="container-wrap-category">
-                <div class="wrap-image">
-                    <img :src="image" class="image2"/>
-                </div>
 
-            <div class="Container-product1">
-                <p class="name1">{{ name }}</p>
-                <p class="discound">{{ discound }}</p>
 
-                <div class="Discound1">
-                    <p class="dsprice1">{{ dsprice }}</p>
-                    <p class="price1">{{ price }}</p>
-        
-                </div>
-                    <div class="Box-buy1">
-                        <p class="add">{{ add }}</p>
-                        <p class="buy1">{{ buy }}</p>
-                    </div>
-                </div>
-            </div> -->
     </div>   
 </template>
 <script>
@@ -124,7 +105,7 @@
     
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 235px;
     height: 310px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -139,13 +120,5 @@
         height: 250px;
         color: black;       
     }
-    /* .category1{
-        width: 100%;
-        margin-top: 20px;
-        background-color: rgb(255, 0, 0);
-        display: flex;
-        flex-wrap: wrap;
-       
 
-    } */
 </style>

@@ -34,7 +34,7 @@
 <style>
     .container-wrap{
         height: 250px;
-        width: 480px;
+        width: 479px;
         margin-top: 10px;
         display: flex;
         flex-direction: row;
@@ -42,7 +42,7 @@
         justify-content: center;
         background-color: white;
         border-radius: 10px;
-        gap: 10px;
+        /* gap: 10px; */
 
     }
     .price{
@@ -125,9 +125,11 @@
     .product{
         
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         background-color: rgb(0, 0, 0);
         gap: 10px;
+        margin-top: 5px;
 
     }
 </style>

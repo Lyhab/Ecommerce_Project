@@ -1,69 +1,68 @@
 <template>
-    <div class="container">
+  <div class="container">
 
-        <div class="header_container">
-            <div class="name_container">
-                <div class="firstname">SO</div>
-                    <div class="lastname">
-                        <div>Hab</div>
-                        <div>und</div>
-                    </div>
-                </div>
+      <div class="header_container">
+          <div class="name_container">
+              <div class="firstname">SO</div>
+                  <div class="lastname">
+                      <div>Hab</div>
+                      <div>und</div>
+                  </div>
+              </div>
 
-            <div class="tabheader">
-                <TabHeader></TabHeader>
-                
-            </div>
+          <div class="tabheader">
+              <TabHeader></TabHeader>              
+          </div>
 
-            <div class="login_container">
-                <div class="login">Login</div>
-                <div class="user_logo">
-            <i class="uil uil-user-circle"></i>
-        </div>
-    </div>
+      <div class="login_container">
+              <div class="login">Login</div>
+              <div class="user_logo">
+          <i class="uil uil-user-circle"></i>
+      </div>
+  </div>
 </div>
 
-    <div class="search">
-        
-        <div class="Back">
-            <div>Back</div>
-        </div>
-        <input type="search" placeholder="Search.." name="gsearch" class="Size-Button">
-        <div></div>
-    </div>
+  <div class="search">
+      
+      <div class="Back">
+          <div>Back</div>
+          </div>
+          <input type="search" placeholder="Search.." name="gsearch" class="Size-Button">
+          <div></div>
+  </div>
 
-    <div class="showproduct">
-        <Showproduct v-for="showproduct in store.showproducts" 
-        :id="showproduct.id"
-        :image="showproduct.image" 
-        :title="showproduct.title"
-         />
-      </div>
-    <div class="product">
-        <Product v-for="product in store.products" 
-        :id="product.id"
-        :image="product.image" 
-        :name="product.name" 
-        :title="product.title"
-        :discound="product.discound"
-        :dsprice="product.dsprice"
-        :price="product.price"
-        :buy="product.buy"
-         />
-      </div>
-      <div class="Limited">Limited Promotion</div>
-      <div class="Category">
-        <Category v-for="category in store.categorys" 
-        :id="category.id"
-        :image="category.image" 
-        :name="category.name" 
-        :discound="category.discound"
-        :dsprice="category.dsprice"
-        :price="category.price"
-        :add="category.add"
-        :buy="category.buy"
-         />
-      </div>
+  <div class="showproduct">
+      <Showproduct v-for="showproduct in store.showproducts" 
+      :id="showproduct.id"
+      :image="showproduct.image" 
+      :title="showproduct.title"
+       />
+    </div>
+  <div class="product">
+      <Product v-for="product in store.products" 
+      :id="product.id"
+      :image="product.image" 
+      :name="product.name" 
+      :title="product.title"
+      :discound="product.discound"
+      :dsprice="product.dsprice"
+      :price="product.price"
+      :buy="product.buy"
+       />
+    </div>
+    <div class="Limited">Limited Promotion</div>
+    <div class="Category">
+      <Category v-for="category in store.categorys" 
+      :id="category.id"
+      :image="category.image" 
+      :name="category.name" 
+      :discound="category.discound"
+      :dsprice="category.dsprice"
+      :price="category.price"
+      :add="category.add"
+      :buy="category.buy"
+       />
+    </div>
 </div>
 </template>
 <script>
@@ -73,100 +72,105 @@ import Showproduct from '../components/Showproduct.vue';
 import TabHeader from '../components/TabHeader.vue';
 import { useStore } from '../stores/store';
 export default{
-    name: "Promotion",
-    components:{
-    TabHeader,
-    Showproduct,
-    Product,
-    Category
+  name: "Promotion",
+  components:{
+  TabHeader,
+  Showproduct,
+  Product,
+  Category
 },
 setup() {
-        const store = useStore();
+      const store = useStore();
 
-        // Set the initial active tab to "Home"
-        store.setActiveTab(1);
+      // Set the initial active tab to "Home"
+      store.setActiveTab(1);
 
-        return {
-            store,
-        };
-    },
+      return {
+          store,
+      };
+  },
 }
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
 .Category{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+  background-color: rgb(0, 0, 0);
 }
 .Back{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 30px;
-    color: black;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    /* justify-content: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  color: black;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+
 }
 .Limited{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    font-style: oblique;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-style: oblique;
+  margin-top: 10px;
 }
 .Size-Button{
-    width: 585px;
-    height: 30px;
-    border-radius: 5px;
+  width: 585px;
+  height: 30px;
+  border-radius: 5px;
 }
 .search{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    flex-direction: row;
+  flex-direction: row;
 }
 .name_container{
-    display: flex;
-    font-family: Sixtyfour;
-    cursor: none;
+  display: flex;
+  font-family: Sixtyfour;
+  cursor: none;
 }
 .user_logo{
-    font-size: 30px;
+  font-size: 30px;
 }
 .firstname{
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .lastname{
-    font-size: 26px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1px;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
 }
 
 .login_container{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
 }
 
 .login{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
 }
 .header_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .container{
-    background-color: black;
-    color: white;
-    padding: 30px;
+  background-color: black;
+  color: white;
+  padding: 15px;
 }
+
 </style>

@@ -125,5 +125,11 @@ export const useStore = defineStore("store", {
     setActiveTab(tab) {
       this.activeTab = tab;
     },
+    selectProduct(product) {
+      this.selectedProduct = product
+    },
+    getSelectedProduct() {
+      return this.selectedProduct
+    }
   },
 });

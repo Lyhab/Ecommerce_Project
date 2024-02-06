@@ -40,6 +40,8 @@
         </div>
     </div>
 
+    <Footer></Footer>
+
 </div>
 
 </template>
@@ -47,15 +49,16 @@
 <script>
 import { useStore } from '../stores/store';
 import TabHeader from '../components/TabHeader.vue'
+import Footer from '../components/FooterPage.vue'
 
 export default{
     components: {
         TabHeader,
+        Footer,
     },
     setup() {
         const store = useStore();
 
-        // Set the initial active tab to "Home"
         store.setActiveTab(1);
 
         return {

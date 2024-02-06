@@ -66,8 +66,8 @@
                 <div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px]" ></div>
-                    <div class="translate-y-[40px]">Black</div>
-                    <div  class="translate-y-[40px]">$</div>
+                    <div class="translate-y-[40px] translate-x-[-10px] ">Black</div>
+                    <div  class="translate-y-[40px] translate-x-[-5px] ">$</div>
                     <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value }}</div> 

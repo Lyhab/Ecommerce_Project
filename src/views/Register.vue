@@ -1,25 +1,29 @@
 <template>
     
-    <div class="container-login">
+    <div class="container-register">
 
-        <div class="container-login-wrap">
+        <div class="container-register-wrap">
 
-            <div class="login-image">
+            <div class="register-image">
                 <img src="../assets/images/12.png" class="image-size">
             </div>
 
-            <div class="wrap-login">
-                <div class="login">Login</div>
-                <div class="sign">Don’t have an account? Sign up</div>
+            <div class="wrap-register">
+                <div class="register">Register</div>
+                <div class="sign">Create your account</div>
                 <div class="Foruser">
-                <div class="useremail">User name or email</div>
-                <input type="text" placeholder="Enter Email" name="email" required  class="Button-size">
+                <div class="useremail">User name</div>
+                <input type="text" placeholder="User name" name="email" required  class="Button-size">
+                <div></div>
+                <div></div>
+                <div class="password">Email</div>
+                <input type="text" placeholder="Email@gmail" name="email" required class="Button-size">
                 <div></div>
                 <div></div>
                 <div class="password">Password</div>
-                <input type="text" placeholder="Enter Password" name="email" required class="Button-size">
+                <input type="text" placeholder="Password" name="email" required class="Button-size">
             </div>
-            <div></div>
+
             <Button class="Button-signup">Sign Up</Button>
             </div>
         </div>
@@ -31,7 +35,7 @@
 
 export default{
     
-    name: "login",
+    name: "Register",
     components:{
 
     },
@@ -46,6 +50,7 @@ export default{
         height: 35px;
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
+        margin-top: 5px;
 
     }
     .sign{
@@ -64,11 +69,11 @@ export default{
         justify-content: left;
         gap: 10px;
     }
-    .login{
+    .register{
         font-size: 50px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
-    .wrap-login{
+    .wrap-register{
         width: 400px;
         height: 500px;
         background-color: rgb(255, 255, 255);
@@ -84,14 +89,14 @@ export default{
         width: 450px;
         height: 550px;
     }
-    .login-image{
+    .register-image{
         width: 550px;
         height: 500px;
         display: flex;
         align-items: center;
     }
 
-    .container-login-wrap{
+    .container-register-wrap{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -101,7 +106,7 @@ export default{
         
         
     }
-    .container-login{
+    .container-register{
         background-color: black;
         display: flex;
         flex-direction: column;

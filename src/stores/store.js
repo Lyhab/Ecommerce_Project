@@ -132,4 +132,4 @@ export const useStore = defineStore("store", {
       return this.selectedProduct
     }
   },
-});
+});  

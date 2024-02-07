@@ -42,11 +42,9 @@
           <!--image display-->
           <!-- Assuming you want to bind product image dynamically -->
         </div>
-        <div class='bg-[#3B4856] w-[640px] h-[500px] translate-x-[50px] mb-5 rounded-md'>dis</div>
+        <div class='bg-[#3B4856] w-[750px] h-[670px] translate-x-[35px] mb-5 rounded-md'>dis</div>
       </div>
-      <div
-        class="text-black bg-[#C5D0DF] w-[50%] rounded-md m-5 mr-0 flex flex-col justify-between"
-      >
+      <div class=" bg-[#C5D0DF] w-[640px] rounded-md m-5 mr-0 flex flex-col justify-between">
         <div>
           <div class="flex justify-between p-10">
             <div
@@ -65,10 +63,10 @@
                 1.color(4)
                 <div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
-                    <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px]" ></div>
-                    <div class="translate-y-[40px] translate-x-[-10px] ">Black</div>
-                    <div  class="translate-y-[40px] translate-x-[-5px] ">$</div>
-                    <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
+                    <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px] translate-x-[-10px]" ></div>
+                    <div class="translate-y-[40px] translate-x-[-90px] ">Black</div>
+                    <div  class="translate-y-[40px] translate-x-[-75px] ">$</div>
+                    <div class="flex translate-y-[30px]  translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value }}</div> 
                       <button @click="decrease" class="w-[30px] h-[30px] ml-2 translate-x-[28px] translate-y-[5px]"><img src="../assets/icons/decrease.png" alt=""></button>
@@ -76,9 +74,9 @@
                   </div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/White_Golden_Beat.webp" class=" cursor-pointer w-[80px]" ></div>
-                    <div class="translate-y-[40px]">White</div>
-                    <div  class="translate-y-[40px]">$</div>
-                    <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
+                    <div class="translate-y-[40px]  translate-x-[-70px]">White</div>
+                    <div  class="translate-y-[40px]  translate-x-[-70px]">$</div>
+                    <div class="flex translate-y-[30px] translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase1" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value1 }}</div> 
                       <button @click="decrease1" class="w-[30px] h-[30px] ml-2 translate-x-[28px] translate-y-[5px]"><img src="../assets/icons/decrease.png" alt=""></button>
@@ -86,9 +84,9 @@
                   </div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/8.png" class=" cursor-pointer w-[80px]" ></div>
-                    <div class="translate-y-[40px]">Blue</div>
-                    <div  class="translate-y-[40px]">$</div>
-                    <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
+                    <div class="translate-y-[40px] translate-x-[-70px]">Blue</div>
+                    <div  class="translate-y-[40px]  translate-x-[-70px]">$</div>
+                    <div class="flex translate-y-[30px] translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase2" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value2 }}</div> 
                       <button @click="decrease2" class="w-[30px] h-[30px] ml-2 translate-x-[28px] translate-y-[5px]"><img src="../assets/icons/decrease.png" alt=""></button>
@@ -96,15 +94,17 @@
                   </div>
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/7.png" class=" cursor-pointer w-[80px]" ></div>
-                    <div class="translate-y-[40px]">Red</div>
-                    <div  class="translate-y-[40px]">$</div>
-                    <div class="flex translate-y-[30px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
+                    <div class="translate-y-[40px]  translate-x-[-70px]">Red</div>
+                    <div  class="translate-y-[40px]  translate-x-[-70px]">$</div>
+                    <div class="flex translate-y-[30px] translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase3" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value3 }}</div> 
                       <button @click="decrease3" class="w-[30px] h-[30px] ml-2 translate-x-[28px] translate-y-[5px]"><img src="../assets/icons/decrease.png" alt=""></button>
                      </div>
                   </div>
-                  <div class=" cursor-pointer w-[250px] h-[70px] bg-fuchsia-600 rounded-[50px] mt-[50px] text-white text-3xl font-normal font-['Ramaraja'] flex justify-center items-center">Start order</div>
+                 <div> 
+                  <startOrder/>
+                 </div>
                 </div>
               </div>
             </div>
@@ -116,8 +116,8 @@
         </div>
         <!-- purchase detail-->
         <div class="p-10 pt-0 mb-[150px]">
-          <div class="w-[1207px] text-black text-3xl font-bold font-['Ramaraja'] p-3 pl-0">Purchase details </div>
-          <div class="w-[1207px] text-black text-3xl font-bold font-['Ramaraja'] p-3 pl-0">Protection with trade Assurance </div>
+          <div class=" text-black text-3xl font-bold font-['Ramaraja'] p-3 pl-0">Purchase details </div>
+          <div class=" text-black text-3xl font-bold font-['Ramaraja'] p-3 pl-0">Protection with trade Assurance </div>
           <div>
             <div class="flex p-3 pl-0"><img src="../assets/icons/ship.png" class="w-[30px] cursor-pointer"><span class="ml-2 text-black text-3xl font-bold font-['Ramaraja']">Shipping</span></div>
             
@@ -155,7 +155,8 @@
 </template>
 
 <script>
-import FooterPage from '../components/FooterPage.vue'
+import FooterPage from '../components/FooterPage.vue';
+import startOrder from '../components/clickbuy.vue';
 import TabHeader from "../components/TabHeader.vue";
 import { useStore } from '../stores/store';
 import { ref, computed } from "vue";
@@ -204,6 +205,7 @@ export default {
   },
   components: {
     FooterPage,
+    startOrder,
     TabHeader,
   },
   setup() {

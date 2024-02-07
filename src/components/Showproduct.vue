@@ -1,6 +1,7 @@
 <template>
     <div class="Showproduct" :style="{ backgroundColor: bgColor }">
         <div></div>
+        <div></div>
         <img :src="image" class="image"/>
         <p class="title">{{ title }}</p>
         <div></div>
@@ -23,10 +24,11 @@
         justify-content: center;
         align-items: center;
         color: black;
-        width: 410px;
+        width: 480px;
         height: 200px;
         font-family: "Times New Roman", Times, serif;
         font-size: 50px;
+        font-family: Jura;
     }
     .Showproduct{
         display: flex;

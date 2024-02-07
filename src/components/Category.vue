@@ -16,8 +16,8 @@
         
                 </div>
                     <div class="Box-buy1">
-                        <p class="add">{{ add }}</p>
-                        <p class="buy1">{{ buy }}</p>
+                        <!-- <p class="add">{{ add }}</p> -->
+                        <button class="buy1">{{ buy }}</button>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         width: 180px;
         height: 180px;
     }
-    .add{
+    /* .add{
         width: 60px;
         height: 25px;
         display: flex;
@@ -56,7 +56,7 @@
         border-radius: 10px;
         margin-left: 2px;
         
-    }
+    } */
     .Box-buy1{
         display: flex;
         flex-direction: row;
@@ -73,16 +73,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #006CEA;
-        border-radius: 10px;
-        margin-left: 30px;
+        background-color: #3a92f8;
+        border-radius: 8px;
+        margin-left: 5px;
+        border: 0px;
+        margin-top: 10px;
+        font-family: Georgia;
     }
     .name1{
         display: flex;
         justify-content: left;
         margin-left: 5px;
         font-size: 15px;
-        /* font-family: Georgia; */
+        font-family: Jura;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         
     }

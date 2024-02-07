@@ -16,7 +16,7 @@
 
         
         <div class="login_container">
-            <div class="login">Login</div>
+            <div class="login">Logout</div>
             <div class="user_logo">
                 <i class="uil uil-user-circle"></i>
             </div>
@@ -24,12 +24,7 @@
     </div>
 
             <div class="container-box">
-                <div></div>
-            <div class="container-row1">
-                <div><img src="../assets/images/1.jpg" class="image"></div>
-                <div><img src="../assets/images/1.jpg" class="image"></div>
-               
-            </div>
+
             <div class="container-row2">
             
                 <div class="wrap-text">
@@ -65,13 +60,23 @@
 
 <script>
     import TabHeader from '../components/TabHeader.vue';
-
+    import { useStore } from '../stores/store';
 
     export default{
         name: "AboutPage",
         components:{
         TabHeader
-        }
+        },
+        setup() {
+        const store = useStore();
+
+        // Set the initial active tab to "Home"
+        store.setActiveTab(5);
+
+        return {
+            store,
+        };
+    },
     }
 </script>
 
@@ -125,10 +130,11 @@
         align-items: center;
         justify-content: center;
         width: 99%;
-        height: 700px;
+        height: 680px;
         background-color: rgb(255, 255, 255);
         margin-left: 5px;
         margin-top: 10px;
+
     }
     .wrap-text{
         color: rgb(0, 0, 0);
@@ -139,15 +145,18 @@
         flex-wrap: wrap;
         flex-direction: column;
         gap: 10px;
+        font-family: Jura;
+        font-size: 16px;
         
     }
     .container-row2{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 600px;
+        width: 700px;
         height: 650px;
         /* background-color: rgb(255, 0, 0); */
+        /* gap: 10px; */
         /* margin-top: 100px; */
     }
     .container-row1{

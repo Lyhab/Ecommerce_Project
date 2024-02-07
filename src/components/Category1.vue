@@ -14,7 +14,7 @@
         <p class="price">{{ price }}</p>
         </div>
         <div class="Box-buy">
-        <p class="buy">{{ buy }}</p>
+        <button class="buy">{{ buy }}</button>
         </div>
         </div>
         </div>
@@ -53,9 +53,11 @@ export default{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #006CEA;
+        background-color: #3a92f8;
         border-radius: 10px;
         margin-left: 50px;
+        border: 0px;
+        font-family: Georgia;
     }
     .dsprice{
         font-family: Georgia;

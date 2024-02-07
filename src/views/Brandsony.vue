@@ -14,16 +14,16 @@
             </div>
 
             <div class="login_container">
-                <div class="login">Login</div>
+                <div class="login">Logout</div>
                 <div class="user_logo">
             <i class="uil uil-user-circle"></i>
         </div>
     </div>
 </div>
 <div class="search">       
-        <div class="Back">
-            <div>Back</div>
-        </div>
+        <!-- <div class="Back">
+            <button class="button-Back">Back</button>
+        </div> -->
         <input type="search" placeholder="Search.." name="gsearch" class="Size-Button">
         <div></div>
     </div>
@@ -66,7 +66,7 @@ setup() {
         const store = useStore();
 
         // Set the initial active tab to "Home"
-        store.setActiveTab(1);
+        store.setActiveTab(2);
 
         return {
             store,
@@ -77,6 +77,7 @@ setup() {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "https://unicons.iconscout.com/release/v4.0.0/css/line.css";
+
 .Categorys{
     display: flex;
         flex-wrap: wrap;
@@ -87,26 +88,18 @@ setup() {
         
 }
 .Size-Button{
-    width: 585px;
+    width:644px;
     height: 30px;
     border-radius: 5px;
+    margin-left: 55px;
 }
-.Back{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 30px;
-    color: black;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    /* justify-content: center; */
-}
+
 
 .search{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+    margin-left: 47px;
 }
 .brand-wrap{
     background-color: black;

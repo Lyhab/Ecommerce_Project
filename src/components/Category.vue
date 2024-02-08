@@ -3,7 +3,10 @@
         <!-- 1 -->
             <div class="container-wrap-category">
                 <div class="wrap-image">
+                    <router-link :to="`/cart/${id}`">
+                        
                     <img :src="image" class="image2"/>
+                    </router-link>
                 </div>
 
             <div class="Container-product1">

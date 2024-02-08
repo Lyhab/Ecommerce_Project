@@ -2,7 +2,9 @@
     
     <div class="product" :style="{ backgroundColor: bgColor }">
         <div class="container-wrap">
-        <img :src="image" class="image1"/>
+        <router-link :to="`/cart/${id}`">
+            <img :src="image" class="image1"/>
+        </router-link>
 
         <div class="Container-product">
         <p class="name">{{ name }}</p>

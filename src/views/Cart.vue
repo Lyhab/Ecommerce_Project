@@ -23,7 +23,7 @@
 
     <div class="search">
       <div class="Back">
-        <div>Back</div>
+        <router-link to="`/Promotion/`">Back</router-link>
       </div>
       <input
         type="search"
@@ -37,12 +37,14 @@
     <div class="bg-[#929CA8] w-[100%] mb-10 mt-10 rounded-md flex justify-between h-[1500px] ">
       <div class="flex flex-col justify-between">
         <div >
-          <div ></div>
-           
           <!--image display-->
           <!-- Assuming you want to bind product image dynamically -->
+         <div class="flex justify-center flex-col items-center">
+          <img :src="product.image" alt="img" class="w-[600px]">
+          <div class="text-slate-800 text-3xl font-bold font-['Ramaraja'] translate-y-[20px]">{{product.name}}</div>
+         </div>
         </div>
-        <div class='bg-[#3B4856] w-[750px] h-[670px] translate-x-[35px] mb-5 rounded-md'>dis</div>
+        <description/>
       </div>
       <div class=" bg-[#C5D0DF] w-[640px] rounded-md m-5 mr-0 flex flex-col justify-between">
         <div>
@@ -65,7 +67,7 @@
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/5.png" class=" cursor-pointer w-[100px] translate-x-[-10px]" ></div>
                     <div class="translate-y-[40px] translate-x-[-90px] ">Black</div>
-                    <div  class="translate-y-[40px] translate-x-[-75px] ">$</div>
+                    <div  class="translate-y-[40px] translate-x-[-75px] ">{{ product.price }}</div>
                     <div class="flex translate-y-[30px]  translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value }}</div> 
@@ -75,7 +77,7 @@
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/White_Golden_Beat.webp" class=" cursor-pointer w-[80px]" ></div>
                     <div class="translate-y-[40px]  translate-x-[-70px]">White</div>
-                    <div  class="translate-y-[40px]  translate-x-[-70px]">$</div>
+                    <div  class="translate-y-[40px]  translate-x-[-70px]">{{ product.price }}</div>
                     <div class="flex translate-y-[30px] translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase1" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value1 }}</div> 
@@ -85,7 +87,7 @@
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/8.png" class=" cursor-pointer w-[80px]" ></div>
                     <div class="translate-y-[40px] translate-x-[-70px]">Blue</div>
-                    <div  class="translate-y-[40px]  translate-x-[-70px]">$</div>
+                    <div  class="translate-y-[40px]  translate-x-[-70px]">{{ product.price }}</div>
                     <div class="flex translate-y-[30px] translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase2" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value2 }}</div> 
@@ -95,7 +97,7 @@
                   <div class="flex flex-row justify-between w-[600px] mt-3">
                     <div><img src="../assets/images/7.png" class=" cursor-pointer w-[80px]" ></div>
                     <div class="translate-y-[40px]  translate-x-[-70px]">Red</div>
-                    <div  class="translate-y-[40px]  translate-x-[-70px]">$</div>
+                    <div  class="translate-y-[40px]  translate-x-[-70px]">{{ product.price }}</div>
                     <div class="flex translate-y-[30px] translate-x-[-35px] h-[40px]  w-[120px] bg-blue-600 rounded-[50px] ">
                       <button @click="increase3" class="w-[30px] h-[30px] mr-2 translate-x-[5px] translate-y-[5px]"><img src="../assets/icons/increase.png" alt=""></button>
                       <div class="translate-x-[15px] translate-y-[5px] text-white">{{ value3 }}</div> 
@@ -158,16 +160,19 @@
 import FooterPage from '../components/FooterPage.vue';
 import startOrder from '../components/clickbuy.vue';
 import TabHeader from "../components/TabHeader.vue";
-import { useStore } from '../stores/store';
-import { ref, computed } from "vue";
+import Products from "../stores/product.js"
+import description from '../components/description.vue'
 
 export default {
+    mixins: [Products],
   data() {
     return {
       value: 0,
       value1: 0,
       value2: 0,
-      value3: 0
+      value3: 0,
+      productId: null,
+      product: null,
 
     };
   },
@@ -207,14 +212,15 @@ export default {
     FooterPage,
     startOrder,
     TabHeader,
+    description,
   },
-  setup() {
-    const store = useStore;
-    return {
-      store,
-
-    }
-  }
+  created(){
+            this.productId = parseInt(this.$route.params.productId);
+            this.product = this.products.find(pro => pro.id == this.productId);
+            
+            this.productId = parseInt(this.$route.params.productId);
+            this.product = this.categorys.find(pro => pro.id == this.productId);
+        },
 };
 </script>
 
